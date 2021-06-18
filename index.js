@@ -63,11 +63,12 @@ const zooAnimals = [
   */
 
   function animalNames(){
-
+    let displayNames = [];
+    zooAnimals.forEach(function(item){
+      return displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    });
+    return displayNames;
   }
-    
-
-  
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -96,7 +97,10 @@ const zooAnimals = [
   */
 
   function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+    const totalLandArea = zooAnimals.reduce((acc, item) => {
+      return acc + item.population;
+    },0)
+    return totalLandArea;
   }
   
   
@@ -109,8 +113,7 @@ const zooAnimals = [
   */
 
   function consume(a,b,cb){
-    return operatorCb(a, b);
-   
+    return cb(a, b);
   }
  
   
