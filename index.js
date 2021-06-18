@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-//the nested function can access the variable internal because the function can reach out of its scope and grab the variable it needs.
+//In the example above we can reference closures. We can pass varibales down, but we can't pass them back up. It gives us the ability to access function from a parent level scope even after the parent function has been terminated. 
 
 
 
